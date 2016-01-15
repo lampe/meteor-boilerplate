@@ -1,20 +1,26 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-let AnimalCount = React.createClass({
-  contextTypes: {
-    store: React.PropTypes.object.isRequired
-  },
-  render(){
-    return(
-      <div>
-        <h1 onClick={()=>{ this.context.store.dispatch({type: 'addFish'}) }}>Fishes: {this.props.fishes} </h1>
-        <h1 onClick={()=>{ this.context.store.dispatch({type: 'addBadger'}) }}>Badgers: {this.props.badgers} </h1>
-        <h1 onClick={()=>{ this.context.store.dispatch({type: 'addSausage'}) }}>Sausages: {this.props.sausages} </h1>
-      </div>
-    )
-  }
-});
+let AnimalCount = (props, context)=>{
+  return(
+    <div>
+      <h1 onClick={()=> context.store.dispatch({type: 'addFish'})}>
+        Fishes: {props.fishes}
+      </h1>
+      <h1 onClick={()=> context.store.dispatch({type: 'addBadger'})}>
+        Badgers: {props.badgers}
+      </h1>
+      <h1 onClick={()=> context.store.dispatch({type: 'addSausage'})}>
+        Sausages: {props.sausages}
+      </h1>
+    </div>
+  )
+}
+
+AnimalCount.contextTypes = {
+  store: React.PropTypes.object.isRequired
+}
+
 
 // Which state should be passed as props?
 function mapStateToProps(state) {

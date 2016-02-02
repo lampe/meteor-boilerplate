@@ -1,7 +1,7 @@
 # My Meteor Boilerplate
 ## Includes:
 
-react
-redux
-react-redux
-redux-devtools
+* react
+* redux
+* react-redux
+* redux-devtools

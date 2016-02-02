@@ -7,13 +7,16 @@ let AnimalCount = (props, context)=>{
   return(
     <div>
       <h1 onClick={()=> context.store.dispatch({type: 'addBadger'})}>
-        Badgers: {props.animals.badgers}
+        Redux Badgers: {props.animals.badgers}
       </h1>
       <h1 onClick={()=> context.store.dispatch({type: 'addSausage'})}>
-        Sausages: {props.animals.sausages}
+        Redux Sausages: {props.animals.sausages}
       </h1>
       <h1 onClick={()=> context.store.dispatch({type: 'addFish'})}>
-        Sausages: {props.animals.fishes}
+        Redux Sausages: {props.animals.fishes}
+      </h1>
+      <h1 onClick={ ()=> Session.set('turnips', 'Now you have some turnips!' )   }>
+        Tracker Turnips: {props.turnips}
       </h1>
     </div>
   )
@@ -47,7 +50,7 @@ const reduxUpdate = (props, onData) => {
 
 // Data using tracker as component props
 const trackerUpdate = (props, onData) => {
-  onData(null, { something: Session.get('test') });
+  onData(null, { turnips: Session.get('turnips') || "Not set" });
 };
 
 

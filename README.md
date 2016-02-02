@@ -1,4 +1,4 @@
-# My Meteor Boilerplate
+# My Meteor Boilerplate (react-komposer branch)
 ## Includes:
 * meteor (1.3 branch)
 * react

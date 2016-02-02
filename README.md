@@ -4,4 +4,4 @@
 * react
 * redux
 * react-redux
-* redux-devtools
+* redux-devtools enabled store and a single component to demonstrate

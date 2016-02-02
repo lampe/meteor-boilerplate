@@ -25,9 +25,9 @@ AnimalCount.contextTypes = {
 // Which state should be passed as props?
 function mapStateToProps(state) {
   return {
-    fishes: state.fishes,
-    badgers: state.badgers,
-    sausages: state.sausages
+    fishes: state.animals.fishes,
+    badgers: state.animals.badgers,
+    sausages: state.animals.sausages
   }
 }
 

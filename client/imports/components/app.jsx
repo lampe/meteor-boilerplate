@@ -1,8 +1,8 @@
 import React from 'react';
 import {Provider} from 'react-redux';
-import store from '../stores/app-store.jsx';
+import store from '../stores/store.jsx';
 import AnimalCount from './animal-count.jsx';
-import DevTools from '../dev-tools/dev-tools.jsx';
+import DevTools from '/client/imports/stores/dev-tools/dev-tools.jsx';
 
 export default (props) => {
   return (

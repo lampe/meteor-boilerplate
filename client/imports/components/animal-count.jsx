@@ -21,7 +21,6 @@ AnimalCount.contextTypes = {
   store: React.PropTypes.object.isRequired
 }
 
-
 // Which state should be passed as props?
 function mapStateToProps(state) {
   return {

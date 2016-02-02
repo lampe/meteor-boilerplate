@@ -1,6 +1,6 @@
 # My Meteor Boilerplate
 ## Includes:
-
+* meteor (1.3 branch)
 * react
 * redux
 * react-redux

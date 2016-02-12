@@ -3,8 +3,7 @@ import { createStore, compose, applyMiddleware } from 'redux';
 import DevTools from './dev-tools/dev-tools.jsx';
 
 // Reducers usually set their own initial state
-// No need to do this globally
-let initialState = {}
+const initialState = {};
 
 // Compose devtools into store
 const finalCreateStore = compose(
